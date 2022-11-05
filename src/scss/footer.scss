@@ -1,0 +1,30 @@
+.footer {
+	background: #fff;
+	&__row {
+		padding: 69px 0 32px;
+		position: relative;
+	}
+	&__text {
+		font-size: 14px;
+		line-height: 20px;
+		color: #999;
+		text-align: justify;
+		&:last-child {
+			text-align: end;
+		}
+	}
+	& .burger-menu {
+		top: 0;
+	}
+}
+
+@media (max-width: 991px) {
+	.footer {
+		&__row {
+			padding: 13px 0 13px;
+		}
+		& .burger-menu {
+			display: none;
+		}
+	}
+}

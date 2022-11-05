@@ -1,0 +1,128 @@
+.contacts-active {
+	& .contacts_active {
+		color: #888;
+	}
+}
+
+.contacts {
+	margin: 0 0 86px 0;
+	background: #fff;
+	&__row {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 59px;
+		padding: 103px 0 65px;
+	}
+	&__body {
+		max-width: 300px;
+		margin: 0 0 15px 0;
+	}
+	&__title {
+		line-height: 26px;
+		margin: 0 0 40px 0;
+	}
+	&__list {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 37px;
+		color: #333;
+	}
+	&__text {
+		font-style: normal;
+		line-height: 24px;
+		&_lh {
+			line-height: 25.5px;
+		}
+	}
+	&__link {
+		color: #337AB7;
+		&:hover {
+			color: #5b87ad;
+		}
+	}
+	&__number {
+		display: block;
+		line-height: 24px;
+		span {
+			color: #999;
+		}
+		&_viber span {
+			color: #79509A;
+		}
+	}
+	&__map {
+		position: relative;
+		width: 73.6%;
+		padding: 0 0 42.06% 0;
+		iframe {
+			object-fit: cover;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+
+@media (max-width: 991px) {
+	.contacts {
+		margin: 0;
+		& .container {
+			padding: 0;
+		}
+		&__row {
+			flex-direction: column;
+			padding: 56px 0 0;
+			gap: 34px;
+		}
+		&__body {
+			max-width: 100%;
+			width: 100%;
+			padding: 0 30px;
+		}
+		&__title {
+			margin: 0 0 28px 0;
+		}
+		&__list {
+			grid-template-columns: repeat(2, 1fr);
+			gap: 47px 35px;
+		}
+		&__map {
+			width: 100%;
+			padding: 0 0 74.22% 0;
+		}
+	}
+}
+
+@media (max-width: 575px) {
+	.contacts {
+		margin-bottom: 23px;
+		&__row {
+			padding: 32px 0 23px;
+			gap: 23px;
+		}
+		&__body {
+			padding: 0 15px;
+		}
+		&__title {
+			margin: 0 0 40px 0;
+		}
+		&__list {
+			grid-template-columns: 1fr;
+			gap: 37px;
+		}
+		&__item {
+			&:nth-child(3){
+				margin: -6px 0 0;
+			}
+			&:last-child{
+				margin: -8px 0 0;
+			}
+		}
+		&__map {
+			padding: 0 0 178.125% 0;
+		}
+	}
+}

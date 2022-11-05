@@ -1,0 +1,363 @@
+.company-active {
+	& .company_active {
+		color: #888;
+	}
+}
+
+.company {
+	margin: 0 0 46px 0;
+	padding: 75px 0 58px 0;
+	background: #fff;
+	&__title {
+		text-align: center;
+		line-height: 30px;
+		background: #F8F9FA;
+		padding: 26px 20px 22px;
+		margin: 0 0 35px 0;
+	}
+	&__row {
+		max-width: 1280px;
+		margin: 0 auto;
+	}
+	&__text {
+		line-height: 29px;
+		text-align: center;
+		margin: 0 0 25px 0;
+	}
+	&__image {
+		display: block;
+		width: 100%;
+		margin-bottom: 35px;
+	}
+	&__list-title {
+		line-height: 26px;
+		margin: 0 0 13px 0;
+	}
+}
+
+.about {
+	padding: 0 0 101px;
+}
+
+.video {
+	background: #000;
+	height: 220px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	margin-bottom: 45px;
+	&__play {
+		border: 2px solid #FFFFFF;
+		height: 100px;
+		width: 100px;
+		border-radius: 50%;
+		position: relative;
+		&:hover {
+			box-shadow: 0 0 20px #fff;
+		}
+	}
+	&__icon {
+		position: absolute;
+		top: 50%;
+		left: 55%;
+		transform: translate(-50%, -50%);
+	}
+	&__content{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		visibility: hidden;
+		opacity: 0;
+		&._active {
+			visibility: visible;
+			opacity: 1;
+		}
+	}
+	&__wrap {
+		width: 100%;
+		height: 100%;
+		position: relative;
+		iframe {
+			object-fit: cover;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+
+.content-about {
+	padding: 55px 42px 42px 48px;
+	background: #FFFFFF;
+	border: 1px solid #E6E6E6;
+	border-radius: 5px;
+	margin: 0 0 66px 0;
+	&__title {
+		line-height: 26px;
+		margin: 0 0 17px 0;
+	}
+	&__text {
+		line-height: 24px;
+		max-width: 850px;
+		margin: 0 0 32px 0;
+	}
+}
+
+.items-about {
+	padding: 33px 0 0 0;
+	border-top: 1px solid #E2E2E2;
+	display: flex;
+	justify-content: space-between;
+	gap: 55px;
+	&__title {
+		font-size: 16px;
+		line-height: 24px;
+		margin: 0 0 14px 0;
+	}
+}
+
+.benefits {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 52px 100px;
+	margin: 0 0 46px 0;
+	&__item {
+		max-width: 530px;
+		margin: 0 0 0 50px;
+		position: relative;
+		line-height: 24px;
+		&::before {
+			content: url('@img/icons/check.svg');
+			position: absolute;
+			top: 0px;
+			left: -51px;
+		}
+	}
+}
+
+.banner-about {
+	border: 1px solid #E6E6E6;
+	border-radius: 5px;
+	&__image {
+	background: url('@img/company_image-2.png') 0 0/auto 100% no-repeat, #fff;
+	width: 100%;
+	height: 178px;
+	}
+	&__body {
+		max-width: 837px;
+		margin: -177px 0 0 auto;
+		padding: 31px 28px 30px 0;
+	}
+	&__text{
+		line-height: 24px;
+		color: #333;
+		margin: 0 0 20px 0;
+	}
+	&__button {
+		max-width: 230px;
+	}
+}
+
+@media (max-width: 1340px) {
+	.benefits {
+		justify-content: space-between;
+		gap: 54px 7px;
+		&__item {
+			width: 42.5%;
+			margin: 0 0 0 38px;
+			&::before {
+				left: -40px;
+			}
+		}
+	}
+
+	.banner-about{
+		&__body {
+			padding: 29px 30px 30px;
+			max-width: 100%;
+			background: #fff;
+			margin: 0;
+		}
+		&__text {
+			margin: 0 0 25px 0;
+		}
+	}
+}
+
+@media (max-width: 991px) {
+	.company {
+		padding: 30px 0 34px 0;
+		margin: 0 0 41px 0;
+		border-radius: 5px;
+		&__title {
+			font-size: 16px;
+			padding: 26px 10px 26px;
+			line-height: 24px;
+		}
+		&__text {
+			line-height: 23px;
+			margin: 0 0 33px 0;
+		}
+		&__image {
+			margin-bottom: 30px;
+		}
+		&__list-title {
+			font-size: 16px;
+			margin: 0px 0 6px 0;
+		}
+	}
+
+	.about {
+		padding: 0 0 41px;
+	}
+
+	.video {
+		margin: 0 29px 26px 30px;
+		height: 277px;
+		// &__play {
+		// 	width: 40px;
+		// 	height: 40px;
+		// 	margin: -12px 0 0 0;
+		// }
+		// &__icon {
+		// 	width: 13px;
+		// }
+	}
+
+	.content-about {
+		padding: 33px 14px 34px 14px;
+		margin: 0 0 51px 0;
+		&__title {
+			margin: 0 0 20px 0;
+		}
+		&__text {
+			margin: 0 0 19px 0;
+		}
+	}
+
+	.items-about {
+		padding: 23px 0 0 0;
+		gap: 31px;
+		&__title {
+			margin: 0 0 5px 0;
+		}
+	}
+
+	.benefits {
+		gap: 54px 16px;
+		justify-content: flex-start;
+		margin: 0 0 40px 0;
+		&__item {
+			max-width: 301px;
+		}
+	}
+
+	.banner-about{
+		&__body {
+			padding: 29px 15px 30px 15px;
+			max-width: 100%;
+			background: #fff;
+			margin: 0;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.about {
+		padding: 0 0 25px;
+	}
+	.benefits {
+		&__item {
+			max-width: 100%;
+			width: 100%;
+		}
+	}
+
+	.banner-about {
+		&__image {
+			background-position: -4px 0;
+			height: 76.85px;
+		}
+		&__body {
+			padding: 16px 12px 36px 12px;
+		}
+		&__text {
+			margin: 0 0 27px 0;
+		}
+		&__button {
+			margin: 0 auto;
+		}
+	}
+}
+
+@media (max-width: 575px) {
+	.company {
+		margin: -5px 15px 31px;
+		padding: 30px 0 19px 0;
+		& .container {
+			padding: 0 5px;
+		}
+		&__title {
+			padding: 24px 10px 26px;
+			margin: 0px 8px 25px;
+		}
+		&__text {
+			margin: 0 8px 23px;
+		}
+		&__image {
+			margin-bottom: 21px;
+		}
+		&__list-title {
+			margin: 0px 8px 16px;
+		}
+		&__list {
+			margin: 0 8px
+		}
+	}
+
+	.video {
+		margin: 0 0 30px;
+		height: 220px;
+	}
+
+	.content-about {
+		padding: 32px 12px 62px 12px;
+		&__title {
+			font-size: 16px;
+			line-height: 24px;
+			margin: 0 0 16px 0;
+		}
+		&__text {
+			font-size: 15px;
+			line-height: 22px;
+			margin: 0 0 32px 0;
+		}
+	}
+
+	.items-about {
+		flex-direction: column;
+		padding: 33px 0 0 0;
+		gap: 22px;
+		&__title {
+			margin: 0px 0 1px 0;
+		}
+	}
+
+	.benefits {
+		// margin-bottom: 44px;
+		margin-bottom: 99px;
+		&__item {
+			margin: 0;
+			&::before {
+				left: -2px;
+				top: -31px;
+			}
+		}
+	}
+}

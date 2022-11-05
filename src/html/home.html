@@ -1,0 +1,103 @@
+<section class="home">
+	<div class="container container_fullscreen">
+		<!-- <div class="home__slider slider">
+			<div class="slider__wrap">
+				<div class="slider__image slider__image_before"></div>
+				<img class="slider__image" src="@img/homepage_image.jpg" />
+
+				<input type="range" min="0" max="100" value="50" aria-label="Percentage of before photo shown"
+					class="slider__range-input" />
+				<div class="slider__line" aria-hidden="true"></div>
+				<div class="slider__button" aria-hidden="true">
+					<img src="@img/icons/range-icon.svg" alt="" class="slider__button-icon">
+				</div>
+			</div>
+			<div class="slider__card card-slider">
+				<p class="card-slider__text">
+					Діагностика та ремонт стартерів, генераторів, кондиціонерів
+					<img src="@img/icons/homepage_repair.svg" alt="Repair" class="card-slider__icon">
+				</p>
+				<a href="./services.html" class="card-slider__button button">Мережа сервісів</a>
+			</div>
+			<div class="slider__card card-slider card-slider_after">
+				<p class="card-slider__text">
+					Продаж стартерів, генераторів та компонентів
+					<img src="@img/icons/homepage_sale.svg" alt="Repair" class="card-slider__icon">
+				</p>
+				<a href="#" class="card-slider__button button">Перейти в магазин</a>
+			</div>
+		</div> -->
+		<div class="home__slider">
+			<div class="slider">
+				<div class="slider__before">
+					<img src="@img/homepage_sliderimage.jpg" alt="Before Image" class="slider__img">
+				</div>
+				<div class="slider__after">
+					<!-- <img src="@img/homepage_image.jpg" alt="After Image"> -->
+				</div>
+				<div class="slider__change"><span><img src="@img/icons/range-icon.svg" alt="icon"></span></div>
+			</div>
+			<div class="slider__card card-slider">
+				<p class="card-slider__text">
+					Діагностика та ремонт стартерів, генераторів, кондиціонерів
+					<img src="@img/icons/homepage_repair.svg" alt="Repair" class="card-slider__icon">
+				</p>
+				<a href="./services.html" class="card-slider__button button">Мережа сервісів</a>
+			</div>
+			<div class="slider__card card-slider card-slider_after">
+				<p class="card-slider__text">
+					Продаж стартерів, генераторів та компонентів
+					<img src="@img/icons/homepage_sale.svg" alt="Repair" class="card-slider__icon">
+				</p>
+				<a href="#" class="card-slider__button button">Перейти в магазин</a>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="home__body body-home">
+			@@include('./logo.html',{})
+			<h2 class="body-home__title">Справжні професіонали на ринку стартерів та генераторів</h2>
+			<div class="body-home__list item-list">
+				<a href="./services.html" class="body-home__item item-card">
+					<div class="item-card__image item-card__image_home">
+						<img src="@img/homepage_card-bg-1.jpg" alt="Services" class="item-card__img">
+					</div>
+					<div class="item-card__body">
+						<h3 class="item-card__title">Мережа СТЦ</h3>
+						<p class="item-card__text">Ремонт стартерів,
+							генераторів, кондиціонерів</p>
+					</div>
+				</a>
+
+				<a href="#" class="body-home__item item-card">
+					<div class="item-card__image item-card__image_home">
+						<img src="@img/homepage_card-bg-2.jpg" alt="Services" class="item-card__img">
+					</div>
+					<div class="item-card__body">
+						<h3 class="item-card__title">Інтернет-магазин</h3>
+						<p class="item-card__text">
+							Понад 15 000 позицій агрегатів та компонентів
+						</p>
+					</div>
+				</a>
+
+				<a href="./franchise.html" class="body-home__item item-card">
+					<div class="item-card__image item-card__image_home">
+						<img src="@img/homepage_card-bg-3.jpg" alt="Services" class="item-card__img">
+					</div>
+					<div class="item-card__body">
+						<h3 class="item-card__title">Готові рішення</h3>
+						<p class="item-card__text">
+							Готові рішення<br>
+							в стар-ген сегменті для СТО
+						</p>
+					</div>
+				</a>
+			</div>
+			<article class="body-home__article">
+				У нас представлений широкий асортимент запчастин та комплектуючих для вантажних та легкових авто,
+				сільськогосподарських машин, водомоторної техніки, а також мотоциклів та промислового сектору ринку.
+			</article>
+		</div>
+	</div>
+</section>
