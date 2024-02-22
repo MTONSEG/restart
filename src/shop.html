@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{"title":"Restart — Iнтернет магазин"})
+
+<body>
+	<div class="wrapper">
+		<div class="shop-active">
+			@@include('html/header.html',{})
+		</div>
+		<section class="shop">
+			<div class="container">
+				<div class="shop__contant">
+					<img src="@img/404.jpg" alt="Not Found" class="shop__image">
+					<p class="shop__text">
+						А все тому, що не було цієї сторінки в макеті
+					</p>
+					<img src="@img/cat.jpg" alt="" class="shop__smile">
+				</div>
+			</div>
+		</section>
+		<div class="shop-active">
+			@@include('html/footer.html',{})
+		</div>
+	</div>
+
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>
